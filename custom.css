@@ -1,0 +1,45 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 99px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 54px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+}
+
+li {
+  font-size: 16px;
+}
+
+div.oblozka {
+  text-align: left;
+}
+div.oblozka {
+  padding-top: 15px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: #003243;
+}
