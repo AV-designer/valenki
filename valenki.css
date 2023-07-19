@@ -1,0 +1,313 @@
+body {
+  font-family: monserrat, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.outer-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 49px 20px 49px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  row-gap: 80px;
+}
+
+.header p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  top: 414px;
+  left: 49px;
+  color: rgb(255 255 255);
+}
+
+.header {
+  position: relative;
+  height: 703px;
+  background: url(./i/vbg.jpg) no-repeat;
+  margin: 0 -49px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 99px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123%;
+  position: absolute;
+  top: 260px;
+  left: 49px;
+}
+
+.header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 209px;
+  left: 49px;
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  left: 49px;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  top: 33px;
+  left: 242px;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #d07502;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.contact {
+  position: absolute;
+  top: 26px;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 4px;
+  background: #e48206;
+  padding: 0 30px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.about-collection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.about-collection .section-header {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.section-header {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132%;
+  margin: 0 0 20px 0;
+}
+
+.about-collection p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180.5%;
+  margin-top: 0;
+}
+
+.about-collection .button-link {
+  grid-area: 4 / 1 / 5 / 3;
+  justify-self: center;
+  margin-top: 30px;
+}
+
+.button-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #cfd0d1;
+  height: 61px;
+  font-weight: 200;
+  display: inline-flex;
+  padding: 0 38px;
+  justify-content: center;
+  align-items: center;
+}
+
+.woman-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  gap: 16px;
+  grid-template-areas:
+    "header header header"
+    "😀 😀 ."
+    "🏞️ 🏞️ ."
+    ". . ."
+    "link link link";
+}
+
+.woman-collection p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180.5%;
+  grid-area: 😀;
+  margin: 0px 40px 0 0;
+}
+
+.woman-collection h2 {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 132%;
+  grid-area: header;
+}
+
+.woman-collection .product-card:nth-of-type(2) {
+  grid-area: 🏞️;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+  grid-template-areas: "🧩";
+}
+
+.product-card > img {
+  grid-area: 🧩;
+}
+
+.product-data {
+  grid-area: 🧩;
+  align-self: start;
+  justify-self: end;
+  z-index: 1;
+  padding: 6px 16px 2px 0;
+}
+
+.product-data h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  text-decoration: underline;
+  text-decoration-color: #d7d7d7;
+  margin: 0;
+}
+
+.product-data span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 157.5%;
+}
+
+.woman-collection .button-link {
+  grid-area: link;
+  justify-self: center;
+  margin-top: 40px;
+}
+
+.collection-review {
+  padding: 100px 100px 100px 45px;
+  background: #f9f9f9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  gap: 16px;
+  grid-template-areas: "🏞️ text text";
+}
+
+.collection-review img {
+  grid-area: 🏞️;
+  width: 200px;
+  height: 200px;
+}
+
+.collection-review-text {
+  grid-area: text;
+  padding-bottom: 16px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180.5%;
+}
+
+.collection-review-signature {
+  color: #000;
+  font-size: 14px;
+
+  font-weight: 500;
+  line-height: 157.5%;
+}
+
+.smm li {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  right: 0px;
+  list-style: none;
+}
+
+.footer {
+  margin-top: -40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-template-areas: "text 🏞️";
+  align-items: center;
+}
+
+.footer-adress {
+  grid-area: text;
+}
+.smm {
+  grid-area: 🏞️;
+  align-self: start;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.round-image {
+  clip-path: circle(50% at 50% 50%);
+}
